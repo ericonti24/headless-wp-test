@@ -1,11 +1,12 @@
-// 'use client';
 import Hero from './components/Hero';
+import HomeCards from './components/HomeCards';
 
 const Home = () => {  
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div>
       <Hero />
+      <HomeCards />
     </div>
   );
 };
