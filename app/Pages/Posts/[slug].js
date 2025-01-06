@@ -8,7 +8,7 @@ const PostPage = async ({ params }) => {
     return <h1>404 - Post Not Found</h1>;
   }
 
-  console.log("params", params)
+  // console.log("params", params)
 
   return (
     <div>
