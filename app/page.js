@@ -1,12 +1,8 @@
-import Hero from './components/Hero';
-import HomeCards from './components/HomeCards';
-
 const Home = () => {  
 
   return (
     <div>
-      <Hero />
-      <HomeCards />
+      <h1>Home Page!</h1>
     </div>
   );
 };
