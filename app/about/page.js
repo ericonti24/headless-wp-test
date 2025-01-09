@@ -1,11 +1,16 @@
-import React from 'react'
+import { fetchPageBySlug } from "@/lib/api";
 
-const AboutPage = () => {
+export default async function AboutPage() {
+  const page = await fetchPageBySlug("about");
+
+  if (!page) {
+    return <p>Content not found.</p>;
+  }
+
   return (
     <div>
-      <h1>About Page!</h1>
+      <h1>{page.title.rendered}</h1>
+      <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
     </div>
-  )
+  );
 }
-
-export default AboutPage
