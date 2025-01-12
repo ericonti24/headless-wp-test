@@ -1,11 +1,15 @@
+import he from "he";
+
 // Function to strip HTML tags and decode HTML entities
 export const stripHTML = (html) => {
-    if (!html) return '';
+  if (!html) return '';
 
-    // Remove all HTML tags using regex
-    const cleanHTML = html.replace(/<[^>]*>/g, '').trim();
-    return cleanHTML;
-  };
+  // Remove all HTML tags using regex
+  const cleanHTML = html.replace(/<[^>]*>/g, '').trim();
+
+  // Decode HTML entities
+  return he.decode(cleanHTML);
+};
 
 // Function to extract the first image URL from content
 export const extractImageURL = (html) => {

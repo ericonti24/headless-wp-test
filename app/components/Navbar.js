@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"; // Ensure this path is correct
-import { Rocket } from "lucide-react";
+import { AudioLines } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -8,9 +8,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center">
-          <Rocket className="h-8 w-8 text-blue-600" />
+          <AudioLines className="h-8 w-8 text-blue-600" />
           <span className="ml-2 text-xl font-bold">
-            <Link href="/">Your Brand</Link> {/* Home Route */}
+            <Link href="/">Info Music</Link> {/* Home Route */}
           </span>
         </div>
         
