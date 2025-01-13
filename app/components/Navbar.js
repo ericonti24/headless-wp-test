@@ -26,11 +26,11 @@ export default function Navbar() {
               About
             </Button>
           </Link>
-          <Link href="/sample" passHref>
+          {/* <Link href="/sample" passHref>
             <Button as="a" variant="link">
               Sample
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>
